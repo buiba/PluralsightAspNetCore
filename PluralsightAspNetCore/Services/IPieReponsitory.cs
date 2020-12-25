@@ -8,7 +8,7 @@ namespace PluralsightAspNetCore.Services
 {
     public interface IPieReponsitory
     {
-        IEnumerable<Pie> Pies { get; }
+        IEnumerable<Pie> AllPies { get; }
         IEnumerable<Pie> PiesOfTheWeek { get; }
         Pie GetPieById(int pieId);
     }

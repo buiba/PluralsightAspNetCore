@@ -25,7 +25,7 @@ namespace PluralsightAspNetCore.Controllers
         public ViewResult List()
         {
             PiesListViewModel piesListViewModel = new PiesListViewModel();
-            piesListViewModel.Pies = _pieReponsitory.Pies;
+            piesListViewModel.Pies = _pieReponsitory.AllPies;
 
             ViewBag.CurrentCategory = "Cheese cakes";
             return View(piesListViewModel);

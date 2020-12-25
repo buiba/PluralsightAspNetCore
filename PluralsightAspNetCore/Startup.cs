@@ -24,8 +24,8 @@ namespace PluralsightAspNetCore
             services.AddDbContext<AppDBContext>(options =>
                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<IPieReponsitory, MockPieReponsitory>();
-            services.AddScoped<ICategoryRepository, MockCategoryRepository>();
+            services.AddScoped<IPieReponsitory, PieReponsitory>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddControllersWithViews();
         }
 
